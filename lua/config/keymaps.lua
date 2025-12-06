@@ -44,3 +44,12 @@ map("n", "<leader>dB", function() require("dap").set_breakpoint(vim.fn.input("Br
 map("n", "<leader>dr", function() require("dap").repl.open() end,   { desc = "DAP REPL" })
 map("n", "<leader>du", function() require("dapui").toggle() end,    { desc = "DAP UI toggle" })
 
+-- LeetCode commands
+map("n", "<leader>lq", "<cmd>Leet<cr>", { desc = "LeetCode: open menu" })
+map("n", "<leader>ll", "<cmd>Leet list<cr>", { desc = "LeetCode: list problems" })
+map("n", "<leader>lt", "<cmd>Leet test<cr>", { desc = "LeetCode: test solution" })
+map("n", "<leader>ls", "<cmd>Leet submit<cr>", { desc = "LeetCode: submit solution" })
+map("n", "<leader>lr", "<cmd>Leet run<cr>", { desc = "LeetCode: run solution" })
+map("n", "<leader>ld", "<cmd>Leet desc<cr>", { desc = "LeetCode: show description" })
+map("n", "<leader>lc", "<cmd>Leet console<cr>", { desc = "LeetCode: console" })
+
